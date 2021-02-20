@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<title>Tus Java File Upload Server with Spring Boot Demo</title>
+	<link href="https://releases.transloadit.com/uppy/v1.25.0/uppy.min.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="drag-drop-area" class="DashboardContainer">
+	<h1>Tus Java File Upload Server Demo with Spring Boot</h1>
+	<input placeholder="Enter some text" name="name" autocomplete="true"/>
+	<p id="values"></p>
+	<!--	<form>-->
+	<!--		文件路径:<input class="input-box" type="text" id="file">-->
+	<!--		<input type="button" value="提交" id="button">-->
+	<!--	</form>-->
+	<!--	<p class="content"></p>-->
+
+</div>
+
+
+<script src="https://releases.transloadit.com/uppy/v1.25.0/uppy.min.js"></script>
+
+<script>
+    const input = document.querySelector('input');
+    const log = document.getElementById('values');
+    input.addEventListener('input', updateValue);
+    
+    function updateValue(e) {
+        
+    
+        var uppy = Uppy.Core()
+            .use(Uppy.Dashboard, {
+                inline: true,
+                target: '#drag-drop-area'
+            })
+            .use(Uppy.Tus, {
+                endpoint: 'http://localhost:8080/api/upload',
+                // endpoint: 'http://192.168.4.62:8080/api/upload',
+                resume: true,
+                autoRetry: true,
+                retryDelays: [0, 1000, 3000, 5000],
+                headers: {
+                    'filePath': e.target.value
+                }
+            })
+        uppy.on('complete', (result) => {
+            console.log('Upload complete! We’ve uploaded these files:', result.successful)
+        })
+    }
+    
+    if ( log.textContent!=null) {
+        console.log("_readUntilEnoughDataOrDone:" + log.textContent)
+        
+    }
+    
+</script>
+</body>
+</html>

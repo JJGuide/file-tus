@@ -1,0 +1,43 @@
+
+## 测试步骤
+
+### 1.app-bundle.js里面
+endpoint: 'http://192.168.4.62:8080/api/upload' 修改其中的ip
+headers: {filePath: '/root/import'}  设置要上传的文件存放目录
+     
+### 2.application.yml中
+app.tus-upload-directory=/nas/import/tus  修改为自己的目录 文件临时目录
+
+
+### vpn下测试
+### 下载性能测试
+同时下载两个1g的文件：
+5-8Mb/s
+
+### 上传性能测试
+单个：2G文件上传 
+3 MB/S
+
+同时上传两个文件：
+1个20g  1个1g  8:52
+1g： 3.2M/s
+20g：
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
