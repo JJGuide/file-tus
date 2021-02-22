@@ -1,4 +1,5 @@
 ai\plantdata\client\UploadScript$1.class
+ai\plantdata\config\CorsConfig.class
 ai\plantdata\controller\WebMvcConfig.class
 ai\plantdata\App.class
 ai\plantdata\controller\AppProperties.class

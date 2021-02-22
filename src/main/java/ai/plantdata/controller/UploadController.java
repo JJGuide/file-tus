@@ -119,7 +119,7 @@ public class UploadController {
 
 
     @ApiOperation(value = "下载接口1")
-    @GetMapping("/test")
+    @GetMapping("/download")
     public void download(@RequestParam String fileName, @RequestParam String filePath, HttpServletResponse response) {
         System.out.println(fileName + "  " + fileName);
 
@@ -169,7 +169,7 @@ public class UploadController {
     }
 
 
-    @GetMapping("/download")
+    @GetMapping("/download2")
     @ApiOperation(value = "下载接口2")
 //    @PostMapping("download")
     public ResponseEntity<Resource> download(@RequestParam("filePath") String filePath, HttpServletRequest request) throws IOException {

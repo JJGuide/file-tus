@@ -1,7 +1,7 @@
 
 ## 测试步骤
 
-### 1.app-bundle.js里面
+### 1.前端需要设置（index.html）里面
 endpoint: 'http://192.168.4.62:8080/api/upload' 修改其中的ip
 headers: {filePath: '/root/import'}  设置要上传的文件存放目录
      
