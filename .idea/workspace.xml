@@ -1,22 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="35d87f4a-42fd-4405-a304-47648aa3e681" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file-tus.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ai/plantdata/client/UploadScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/plantdata/client/UploadScript.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ai/plantdata/controller/UploadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ai/plantdata/controller/UploadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ai/plantdata/client/UploadScript$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ai/plantdata/client/UploadScript$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ai/plantdata/client/UploadScript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ai/plantdata/client/UploadScript.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ai/plantdata/controller/UploadController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ai/plantdata/controller/UploadController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/readme.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/file_transfer.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/file_transfer.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/file_transfer.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/file_transfer.jar.original" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/T.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,15 +56,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\repository" />
-        <option name="mavenHome" value="D:/software-java/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="D:\software-java\apache-maven-3.6.3\conf\settings_1.xml" />
+        <option name="mavenHome" value="/usr/local/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="/usr/local/apache-maven-3.6.3/conf/settings.xml" />
+        <option name="workOffline" value="true" />
       </MavenGeneralSettings>
-    </option>
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="importAutomatically" value="true" />
-      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
@@ -71,7 +68,6 @@
   <component name="ProjectId" id="1o1WgZLS9GtVb4GJoc8MGULyfW3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -80,12 +76,23 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="spring.boot" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -103,10 +110,23 @@
       <recent name="D:\work-heikn\其他代码\java\技术栈\file-tus\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.App">
+  <component name="RunManager" selected="Application.UploadController">
     <configuration name="T" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="T" />
       <module name="file-tus" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UploadController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ai.plantdata.controller.UploadController" />
+      <module name="file-tus" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ai.plantdata.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -120,10 +140,12 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UploadController" />
         <item itemvalue="Application.T" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -147,84 +169,31 @@
       <workItem from="1612663366698" duration="158000" />
       <workItem from="1612668614077" duration="1030000" />
       <workItem from="1613978798678" duration="250000" />
+      <workItem from="1623159252934" duration="3034000" />
+      <workItem from="1623162493493" duration="1663000" />
+      <workItem from="1623164184686" duration="1483000" />
+      <workItem from="1623202171858" duration="1938000" />
+      <workItem from="1623220160523" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="800" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1612528273008">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="800" y="480" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1707.920@0.0.1707.920" timestamp="1612528273008" />
-    <state x="635" y="216" key="FileChooserDialogImpl" timestamp="1612581896177">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="635" y="216" key="FileChooserDialogImpl/0.0.1707.920@0.0.1707.920" timestamp="1612581896177" />
-    <state width="1664" height="329" key="GridCell.Tab.0.bottom" timestamp="1613978955278">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="329" key="GridCell.Tab.0.bottom/0.0.1707.920@0.0.1707.920" timestamp="1613978955278" />
-    <state width="1664" height="329" key="GridCell.Tab.0.center" timestamp="1613978955278">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="329" key="GridCell.Tab.0.center/0.0.1707.920@0.0.1707.920" timestamp="1613978955278" />
-    <state width="1664" height="329" key="GridCell.Tab.0.left" timestamp="1613978955277">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="329" key="GridCell.Tab.0.left/0.0.1707.920@0.0.1707.920" timestamp="1613978955277" />
-    <state width="1664" height="329" key="GridCell.Tab.0.right" timestamp="1613978955278">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="329" key="GridCell.Tab.0.right/0.0.1707.920@0.0.1707.920" timestamp="1613978955278" />
-    <state width="1664" height="272" key="GridCell.Tab.1.bottom" timestamp="1612577497612">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.1.bottom/0.0.1707.920@0.0.1707.920" timestamp="1612577497612" />
-    <state width="1664" height="272" key="GridCell.Tab.1.center" timestamp="1612577497611">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.1.center/0.0.1707.920@0.0.1707.920" timestamp="1612577497611" />
-    <state width="1664" height="272" key="GridCell.Tab.1.left" timestamp="1612577497611">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.1.left/0.0.1707.920@0.0.1707.920" timestamp="1612577497611" />
-    <state width="1664" height="272" key="GridCell.Tab.1.right" timestamp="1612577497612">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.1.right/0.0.1707.920@0.0.1707.920" timestamp="1612577497612" />
-    <state width="1664" height="272" key="GridCell.Tab.2.bottom" timestamp="1612577497612">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.2.bottom/0.0.1707.920@0.0.1707.920" timestamp="1612577497612" />
-    <state width="1664" height="272" key="GridCell.Tab.2.center" timestamp="1612577497612">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.2.center/0.0.1707.920@0.0.1707.920" timestamp="1612577497612" />
-    <state width="1664" height="272" key="GridCell.Tab.2.left" timestamp="1612577497612">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.2.left/0.0.1707.920@0.0.1707.920" timestamp="1612577497612" />
-    <state width="1664" height="272" key="GridCell.Tab.2.right" timestamp="1612577497612">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state width="1664" height="272" key="GridCell.Tab.2.right/0.0.1707.920@0.0.1707.920" timestamp="1612577497612" />
-    <state x="57" y="43" width="994" height="802" key="SettingsEditor" timestamp="1613978822277">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="57" y="43" width="994" height="802" key="SettingsEditor/0.0.1707.920@0.0.1707.920" timestamp="1613978822277" />
-    <state x="534" y="193" width="639" height="534" key="find.popup" timestamp="1612534697245">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="534" y="193" width="639" height="534" key="find.popup/0.0.1707.920@0.0.1707.920" timestamp="1612534697245" />
-    <state x="247" y="156" key="new project wizard" timestamp="1612581900216">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="247" y="156" key="new project wizard/0.0.1707.920@0.0.1707.920" timestamp="1612581900216" />
-    <state x="512" y="211" key="run.anything.popup" timestamp="1612576685499">
-      <screen x="0" y="0" width="1707" height="920" />
-    </state>
-    <state x="512" y="211" key="run.anything.popup/0.0.1707.920@0.0.1707.920" timestamp="1612576685499" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,8 +1,8 @@
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\controller\WebMvcConfig.java
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\client\UploadScript.java
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\config\Swagger2Config.java
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\controller\AppProperties.java
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\controller\UploadController.java
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\App.java
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\config\CorsConfig.java
-D:\work-heikn\项目列表\cv项目-开发\coding\file-tus\src\main\java\ai\plantdata\controller\DownloadController.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/controller/WebMvcConfig.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/config/CorsConfig.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/controller/AppProperties.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/config/Swagger2Config.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/controller/UploadController.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/App.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/client/UploadScript.java
+/Users/pjj/IdeaProjects/file-tus/src/main/java/ai/plantdata/controller/DownloadController.java

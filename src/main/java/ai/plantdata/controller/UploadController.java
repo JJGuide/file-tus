@@ -1,10 +1,10 @@
 package ai.plantdata.controller;
 
-import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import me.desair.tus.server.TusFileUploadService;
 import me.desair.tus.server.exception.TusException;
 import me.desair.tus.server.upload.UploadInfo;
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.UrlResource;
 import org.springframework.http.HttpHeaders;
@@ -122,7 +122,6 @@ public class UploadController {
     @GetMapping("/download")
     public void download(@RequestParam String fileName, @RequestParam String filePath, HttpServletResponse response) {
         System.out.println(fileName + "  " + fileName);
-
         if (fileName != null) {
             FileInputStream is = null;
             BufferedInputStream bs = null;
@@ -164,8 +163,61 @@ public class UploadController {
         }
 
         System.out.println("文件不存在---------filePath:" + filePath);
+    }
 
 
+    @ApiOperation(value = "模型下载接口")
+    @GetMapping("model/download")
+    public void modelDownload(@RequestParam String modelPath, HttpServletResponse response) {
+        System.out.println(modelPath + "  " + modelPath);
+
+
+        if (modelPath != null) {
+
+            String dstPath = modelPath + ".zip";
+
+            FileInputStream is = null;
+            BufferedInputStream bs = null;
+            OutputStream os = null;
+            try {
+                File file = new File(dstPath);
+                if (file.exists()) {
+                    response.setHeader("Content-Type", "application/octet-stream");
+                    response.setHeader("Content-Disposition", "attachment;filename=" + StringUtils.substringAfterLast(dstPath,"/"));
+                    is = new FileInputStream(file);
+                    bs = new BufferedInputStream(is);
+                    os = response.getOutputStream();
+                    byte[] buffer = new byte[1024];
+                    int len = 0;
+                    while ((len = bs.read(buffer)) != -1) {
+                        os.write(buffer, 0, len);
+                    }
+                    System.out.println("文件下载成功---------------------------");
+                }else {
+                    System.out.println("文件不存在---------modelPath:" + modelPath);
+                }
+            } catch (IOException ex) {
+                System.out.println("文件下载异常----------: " + ex.getMessage());
+                ex.printStackTrace();
+            } finally {
+                try {
+                    if (is != null) {
+                        is.close();
+                    }
+                    if (bs != null) {
+                        bs.close();
+                    }
+                    if (os != null) {
+                        os.flush();
+                        os.close();
+                    }
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+        System.out.println("文件不存在---------modelPath:" + modelPath);
     }
 
 
