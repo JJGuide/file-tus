@@ -130,7 +130,8 @@ public class UploadController {
                 File file = new File(filePath);
                 if (file.exists()) {
                     response.setHeader("Content-Type", "application/octet-stream");
-                    response.setHeader("Content-Disposition", "attachment;filename=" + fileName);
+                    response.setHeader("Content-Disposition", "attachment;filename=" + new String(fileName.getBytes("gb2312"), "ISO8859-1"));
+//                    response.setHeader("Content-Disposition", "attachment;filename=" + fileName);
                     is = new FileInputStream(file);
                     bs = new BufferedInputStream(is);
                     os = response.getOutputStream();
@@ -183,7 +184,8 @@ public class UploadController {
                 File file = new File(dstPath);
                 if (file.exists()) {
                     response.setHeader("Content-Type", "application/octet-stream");
-                    response.setHeader("Content-Disposition", "attachment;filename=" + StringUtils.substringAfterLast(dstPath,"/"));
+                    response.setHeader("Content-Disposition", "attachment;filename=" + new String(StringUtils.substringAfterLast(dstPath,"/").getBytes("gb2312"), "ISO8859-1"));
+//                    response.setHeader("Content-Disposition", "attachment;filename=" + StringUtils.substringAfterLast(dstPath,"/"));
                     is = new FileInputStream(file);
                     bs = new BufferedInputStream(is);
                     os = response.getOutputStream();
